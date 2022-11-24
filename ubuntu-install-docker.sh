@@ -12,4 +12,4 @@ echo \
 
 sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli docker-compose -y
+sudo apt-get install docker-ce docker-ce-cli docker-compose docker-compose-plugin docker-scan-plugin containerd.io -y
