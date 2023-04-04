@@ -34,16 +34,13 @@ http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-pa
 # > 应用底部栏净化
 http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
 # > 发现页处理
-http-response ^https?://api.gotokeep.com/homepage/v\d/tab script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
+http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
 # > 课程预览页广告
-http-response ^https?://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
+http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
 # > 我的运动页面去除下方推荐
-http-response ^https?://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
-# > 会员页面净化
-http-response ^https?://api.gotokeep.com/arke-webapp/v3/home/prime/page script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep3.js, requires-body=true, timeout=10, tag=keepStyle
+http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
 # > 99999999
-http-response ^https?:\/\/api\.gotokeep\.com\/(?!athena\/v\d\/people\/my|config\/v\d\/basic|homepage\/v\d\/tab|nuocha\/course\/v2\/\w+\/preview|sportpage\/sport\/v3\/mysport|arke-webapp\/v3\/home\/prime\/page).* script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep2.js, requires-body=true, timeout=10, tag=keep99999999
-
+http-response ^https?:\/\/api\.gotokeep\.com\/(?!athena\/v\d\/people\/my|config\/v\d\/basic|homepage\/v\d\/tab|nuocha\/course\/v2\/\w+\/preview|sportpage\/sport\/v3\/mysport).* script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep2.js, requires-body=true, timeout=10, tag=keep99999999
 
 [MITM]
 
