@@ -26,6 +26,8 @@
 ^https?:\/\/api\.gotokeep\.com\/training\/box\/config reject
 # > 屏蔽更新
 ^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check reject
+# > 屏蔽动态相册
+^https?://api.gotokeep.com/athena/v1/people/my/entry reject
 
 [Script]
 
