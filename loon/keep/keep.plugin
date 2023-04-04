@@ -40,7 +40,7 @@ http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=
 # > 我的运动页面去除下方推荐
 http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep1.js, requires-body=true, timeout=10, tag=keepStyle
 # > 99999999
-http-response ^https?:\/\/api\.gotokeep\.com\/(?!athena\/v\d\/people\/my|config\/v\d\/basic|homepage\/v\d\/tab|nuocha\/course\/v2\/\w+\/preview|sportpage\/sport\/v3\/mysport).* script-path=requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js, requires-body=true, timeout=10, tag=keepStyle
+http-response ^https?:\/\/api\.gotokeep\.com\/(?!athena\/v\d\/people\/my|config\/v\d\/basic|homepage\/v\d\/tab|nuocha\/course\/v2\/\w+\/preview|sportpage\/sport\/v3\/mysport).* script-path=https://raw.githubusercontent.com/1amfine2333/sh/main/loon/keep/Keep2.js, requires-body=true, timeout=10, tag=keep99999999
 
 
 [MITM]
